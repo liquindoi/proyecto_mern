@@ -1,4 +1,4 @@
-[enimocar@linuxws backend]$ npm init
+[linuxws backend]$ npm init
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
 
@@ -16,9 +16,9 @@ entry point: (index.js)
 test command: 
 git repository: 
 keywords: 
-author: Ernesto Nimo Carreto
+author: Ernesto
 license: (ISC) 
-About to write to /home/enimocar/formacion/javascript/FullStackJS/backend/package.json:
+About to write to /home/.../formacion/javascript/FullStackJS/backend/package.json:
 
 {
   "name": "apv-backend",
@@ -28,7 +28,7 @@ About to write to /home/enimocar/formacion/javascript/FullStackJS/backend/packag
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Ernesto Nimo Carreto",
+  "author": "Ernesto",
   "license": "ISC"
 }
 
