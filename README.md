@@ -1,3 +1,5 @@
+**Carpetas finales del Backend 100% configurado y vacío**
+
 [linuxws backend]$ npm init
 This utility will walk you through creating a package.json file.
 It only covers the most common items, and tries to guess sensible defaults.
