@@ -32,9 +32,15 @@ const perfil = ( req, res ) => {
     res.json({msg: "Mostrando Perfil"});
 };
 
+const confirmar = ( req, res ) => {
+    console.log(req.params.token);
+    res.json({msg: "Confirmando cuenta..."})
+}
+
 export {
     registrar,
-    perfil
+    perfil,
+    confirmar
 };
 
 // Para enviar la informacion, usamos el métddo POST con el JSON en el body de la petición
