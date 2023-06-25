@@ -3,6 +3,7 @@ import dotenv from 'dotenv';
 import conectarDB from './config/db.js';
 import veterinarioRoutes from './routes/veterinarioRoutes.js';
 
+// Cada una de éstas líneas de abajo son líneas de Middleware
 
 const app = express();
 

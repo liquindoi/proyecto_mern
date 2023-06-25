@@ -1,4 +1,5 @@
 import mongoose, { STATES } from 'mongoose';
+import bcrypt from 'bcrypt';
 import generarId from '../helpers/generarId.js';
 
 const veterinarioSchema = mongoose.Schema({
@@ -35,6 +36,15 @@ const veterinarioSchema = mongoose.Schema({
         default: false
     }
 
+});
+
+veterinarioSchema.pre('save', async function(next) {
+    if(!this.isModified('password')) { // Si el password ya estaba hasheado, entonces ejecuta la "next" linea del Middleware
+                                       // definidas en elfichero principal index.js
+        next();
+    }
+    const salt = await bcrypt.genSalt(10);
+    this.password = await bcrypt.hash(this.password, salt);
 });
 
 const Veterinario = mongoose.model("Veterinario", veterinarioSchema);
